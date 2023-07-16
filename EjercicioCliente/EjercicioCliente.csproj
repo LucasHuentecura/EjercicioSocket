@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A07A64CD-828E-4456-8AC9-B50F0CA8A03F}</ProjectGuid>
+    <ProjectGuid>{9EA2EC02-3AB0-4454-99DD-8C3B78C61D48}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EjercicioSocket</RootNamespace>
-    <AssemblyName>EjercicioSocket</AssemblyName>
+    <RootNamespace>EjercicioCliente</RootNamespace>
+    <AssemblyName>EjercicioCliente</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,13 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServidorSocket\ServidorSocket.csproj">
-      <Project>{bc5016e6-bb02-4bab-a435-f8dd00262579}</Project>
-      <Name>ServidorSocket</Name>
+    <ProjectReference Include="..\ClienteSocketUtils\ClienteSocketUtils.csproj">
+      <Project>{35254ead-01bb-4cac-9c35-5b96db7e8815}</Project>
+      <Name>ClienteSocketUtils</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
